@@ -1,0 +1,103 @@
+.logo {
+    height : 96px;
+    display: flex;
+}
+
+.logo > img {
+    height: 85px;
+    width : 85px;
+    padding : 10px 10px 10px 20px;
+}
+
+.logo > h1 {
+    padding-right : 10px;
+    border-right: 1px solid black;
+}
+
+.logo > h5 {
+    padding : 1rem;
+}
+
+/* Navigation styles begins */
+
+nav {
+    height: 3rem;
+    width: 100%;
+    padding : 0 25px 0 25px;
+    display: inline-block;
+    overflow: hidden;
+    background-color : #fff;
+    border : 1px solid #dedede;
+    color: black;
+}
+
+nav > p {
+    margin:0;
+    padding: 12px 12px 12px 0;
+    font-size : 18px;
+    float : left;
+}
+
+nav > ul {
+    margin : 0;
+    float : right;
+    padding-right: 50px;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style-type : none;
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 18px;
+
+    transition: all 0.2s;
+}
+
+nav > ul > li > .down-arrow {
+    height: 0px;
+    width: 0px;
+    border-top: 4px solid #aaa;
+    border-right : 4px solid transparent;
+    border-left : 4px solid transparent;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.mega-menu-block {
+    position: absolute;
+    display: none; /*change to none*/
+    border : 1px solid #dedede;
+    background-color: #fff;
+    transition: opacity 0.4s;
+    margin-top: 13px;
+    width: 100%;
+    left : 0;
+}
+
+.mega-menu-block > p {
+    margin: 0;
+    padding : 16px;
+    font-size : 22px;
+
+}
+
+.column {
+    float : left;
+    width : 33.33%;
+    padding : 10px;
+}
+
+nav > ul > li:hover {
+    background-color : #85dcb8;
+}
+
+nav > ul > li:hover > .mega-menu-block {
+    display : block;
+    z-index: 1;
+    position : absolute;
+    opacity: 1;
+    visibility : visible;
+    transition : all 0.2s;
+    background-color : white;
+}
