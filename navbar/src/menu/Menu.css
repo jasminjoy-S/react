@@ -84,7 +84,7 @@ nav > ul > li > .down-arrow {
 
 .column {
     float : left;
-    width : 33.33%;
+    /*width : 33.33%;*/
     padding : 10px;
 }
 
@@ -100,4 +100,9 @@ nav > ul > li:hover > .mega-menu-block {
     visibility : visible;
     transition : all 0.2s;
     background-color : white;
+}
+
+.column > p:hover:before {
+    content : "> ";
+    transition : all 1s ease-in-out;
 }
