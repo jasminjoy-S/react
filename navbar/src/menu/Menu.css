@@ -88,6 +88,12 @@ nav > ul > li > .down-arrow {
     padding : 10px;
 }
 
+.icon { 
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+
 nav > ul > li:hover {
     background-color : #85dcb8;
 }
@@ -105,4 +111,10 @@ nav > ul > li:hover > .mega-menu-block {
 .column > p:hover:before {
     content : "> ";
     transition : all 1s ease-in-out;
+}
+
+
+@media screen and (max-width:600px) {
+    .top-menu-bar li { display : none;}
+    .icon { display: block; }
 }
