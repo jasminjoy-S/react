@@ -13,7 +13,7 @@ function Menu(props) {
                 <h1>Ultratec</h1>
                 <h5>Pure as nature</h5>
             </div>
-            <BrowserRouter>
+            <BrowserRouter className="top-menu-bar">
                 <nav>
                     <p>800-ULTRA</p>
                     <ul>
@@ -43,6 +43,7 @@ function Menu(props) {
                         </li>
                         <li>Contact</li>
                     </ul>
+                    <button className="icon">X</button>
                     <Switch>
                         <Route path='/water-filter-uae' component={Filter} />
                     </Switch>
